@@ -1,24 +1,28 @@
-import { Link } from "react-router-dom";
+<div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white px-6 py-12 space-y-12">
+  <div className="text-center space-y-2">
+    <h1 className="text-4xl font-extrabold tracking-wide text-red-500 drop-shadow-lg">SLAYER LEGEND SIMULATOR</h1>
+    <p className="text-lg text-gray-300">Trung tâm mô phỏng & tính toán nâng cấp vũ khí trong Slayer Legend!</p>
+  </div>
 
-export default function Home() {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white px-6 py-10 space-y-10">
-      <div className="text-center space-y-2">
-        <h1 className="text-4xl font-extrabold tracking-wide text-red-500 drop-shadow-xl">SLAYER LEGEND SIMULATOR</h1>
-        <p className="text-lg text-gray-300">Chào mừng bạn đến với trung tâm công cụ mô phỏng và tính toán nâng cấp vũ khí trong Slayer Legend!</p>
-      </div>
+  <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
+    <a href="/exchange-simulator" className="block bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-red-500/50 hover:scale-105 transition-transform duration-200 ease-in-out">
+      <h2 className="text-2xl font-bold text-yellow-400 drop-shadow-sm">🔁 Công cụ đổi kiếm Mythic</h2>
+      <p className="text-sm text-gray-300 mt-2">Tính toán số ngày & tài nguyên để đổi từ Kiếm Đỏ sang Kiếm Xanh cấp cao.</p>
+    </a>
 
-      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <Link to="/exchange-simulator" className="block bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-red-500/50 transition cursor-pointer">
-          <h2 className="text-xl font-bold text-yellow-400">🔁 Công cụ đổi kiếm Mythic</h2>
-          <p className="text-sm text-gray-300 mt-1">Tính toán số ngày, tài nguyên cần thiết và lộ trình đổi từ Kiếm Đỏ sang Kiếm Xanh cấp cao.</p>
-        </Link>
+    <a href="/summon-simulator" className="block bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-sky-400/50 hover:scale-105 transition-transform duration-200 ease-in-out">
+      <h2 className="text-2xl font-bold text-sky-400 drop-shadow-sm">📦 Mô phỏng mua gói kiếm</h2>
+      <p className="text-sm text-gray-300 mt-2">Nhập số KC, chọn level và xem xác suất rớt kiếm chi tiết theo bảng.</p>
+    </a>
 
-        <Link to="/summon-simulator" className="block bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-sky-400/50 transition cursor-pointer">
-          <h2 className="text-xl font-bold text-sky-400">📦 Mô phỏng mua gói kiếm</h2>
-          <p className="text-sm text-gray-300 mt-1">Nhập số KC, chọn level và theo dõi kết quả rớt kiếm theo từng rarity – kèm bảng tổng hợp chi tiết.</p>
-        </Link>
-      </div>
+    <div className="bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-green-400/50 opacity-60 cursor-not-allowed">
+      <h2 className="text-2xl font-bold text-green-400 drop-shadow-sm">📈 Phân tích & thống kê nâng cao</h2>
+      <p className="text-sm text-gray-300 mt-2">Sắp ra mắt: Gợi ý chiến lược nâng cấp & so sánh hiệu quả KC giữa các gói.</p>
     </div>
-  );
-}
+
+    <div className="bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-purple-400/50 opacity-60 cursor-not-allowed">
+      <h2 className="text-2xl font-bold text-purple-400 drop-shadow-sm">🧩 Tùy chỉnh sự kiện</h2>
+      <p className="text-sm text-gray-300 mt-2">Tính năng sắp tới: Mô phỏng sự kiện tăng tỷ lệ rơi kiếm.</p>
+    </div>
+  </div>
+</div>
