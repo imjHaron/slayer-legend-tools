@@ -1,10 +1,10 @@
 <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 text-white px-6 py-12 space-y-12">
   <div className="text-center space-y-2">
     <h1 className="text-4xl font-extrabold tracking-wide text-red-500 drop-shadow-lg">SLAYER LEGEND SIMULATOR</h1>
-    <p className="text-lg text-gray-300">Trung tâm mô phỏng & tính toán nâng cấp vũ khí trong Slayer Legend!</p>
+    <p className="text-lg text-gray-300 max-w-2xl mx-auto">Trung tâm mô phỏng & tính toán nâng cấp vũ khí trong Slayer Legend!</p>
   </div>
 
-  <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
     <a href="/exchange-simulator" className="block bg-gray-800 rounded-2xl p-6 shadow-md hover:shadow-red-500/50 hover:scale-105 transition-transform duration-200 ease-in-out">
       <h2 className="text-2xl font-bold text-yellow-400 drop-shadow-sm">🔁 Công cụ đổi kiếm Mythic</h2>
       <p className="text-sm text-gray-300 mt-2">Tính toán số ngày & tài nguyên để đổi từ Kiếm Đỏ sang Kiếm Xanh cấp cao.</p>

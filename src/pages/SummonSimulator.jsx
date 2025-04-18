@@ -113,9 +113,9 @@ export default function SummonSimulator() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans px-4 py-6 space-y-8">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white px-4 py-10 space-y-10">
       <div className="max-w-4xl mx-auto space-y-6">
-        <Card><CardContent className="space-y-4">
+        <Card className="shadow-lg"><CardContent className="space-y-4">
           <h3 className="text-lg font-bold">💎 Mô phỏng mua gói kiếm</h3>
 
           <div className="flex items-center gap-3">

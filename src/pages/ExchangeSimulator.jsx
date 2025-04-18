@@ -24,9 +24,9 @@ export default function ExchangeSimulator() {
   const [log, setLog] = useState([])
 
   return (
-    <div className="min-h-screen bg-black text-white font-sans px-4 py-6 space-y-8">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white px-4 py-10 space-y-10">
       <div className="max-w-4xl mx-auto space-y-6">
-        <Card><CardContent className="space-y-4">
+        <Card className="shadow-lg"><CardContent className="space-y-4">
           <h2 className="text-xl font-bold">🔧 Công cụ tính đổi Kiếm Xanh 1</h2>
 
           <label className="block mb-1">Số Kiếm Đỏ 1 hiện có:</label>
@@ -58,7 +58,7 @@ export default function ExchangeSimulator() {
           )}
         </CardContent></Card>
 
-        <Card><CardContent className="space-y-4">
+        <Card className="shadow-lg"><CardContent className="space-y-4">
           <h3 className="text-lg font-bold">🎯 Tính số ngày để đạt X Kiếm Xanh 1</h3>
           <label className="block mb-1">Số lượng muốn đạt:</label>
           <Input type="number" value={targetGreen1} onChange={(e) => setTargetGreen1(Number(e.target.value))} min={1} />
@@ -77,7 +77,7 @@ export default function ExchangeSimulator() {
           )}
         </CardContent></Card>
 
-        <Card><CardContent className="space-y-4">
+        <Card className="shadow-lg"><CardContent className="space-y-4">
           <h3 className="text-lg font-bold">⏳ Mô phỏng tiến trình</h3>
           <label className="block mb-1">Số ngày mô phỏng:</label>
           <Input type="number" value={daysSim} onChange={(e) => setDaysSim(Number(e.target.value))} min={1} />
@@ -92,7 +92,7 @@ export default function ExchangeSimulator() {
           )}
         </CardContent></Card>
 
-        <Card><CardContent className="space-y-4">
+        <Card className="shadow-lg"><CardContent className="space-y-4">
           <h3 className="text-lg font-bold">📋 Lộ trình nâng cấp</h3>
           <Button onClick={() => {
             const totalRed1 = RED1_PER_GREEN1 * targetGreen1;
